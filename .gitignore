@@ -41,6 +41,3 @@
 !/CONTRIBUTING.md
 !/CHANGELOG.md
 #  ────────────────────────────────────────────────────────────
-!/contrib/*
-!/contrib/*/*.py
-!/contrib/*/*.md
