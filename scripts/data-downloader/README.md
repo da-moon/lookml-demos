@@ -22,6 +22,6 @@ source ".venv/bin/activate"
 
 - install dependant packages
 
-```
-
+```bash
+python3 -m pip install -r requirements.txt
 ```
