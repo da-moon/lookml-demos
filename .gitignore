@@ -1,2 +1,46 @@
-.venv
-__pycache__
+*
+!*/
+#  ────────────────────────────────────────────────────────────────────
+!/assets/**
+#  ────────────────────────────────────────────────────────────────────
+!/**/.gitkeep
+#  ────────────────────────────────────────────────────────────────────
+!/.cspell/*.txt
+#  ────────────────────────────────────────────────────────────
+!/.vscode/**
+!/.devcontainer/**
+#  ────────────────────────────────────────────────────────────
+!/.github/CODEOWNERS
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/*.md
+!/.github/ISSUE_TEMPLATES/*.yml
+!/.github/workflows/
+!/.github/workflows/*.yml
+#  ────────────────────────────────────────────────────────────────────
+!/.gitpod.yml
+!/gitpod
+!/gitpod/*
+#  ────────────────────────────────────────────────────────────────────
+!/tasks/
+!/tasks/**/*.yaml
+!/Taskfile.yaml
+#  ────────────────────────────────────────────────────────────────────
+!/.editorconfig
+!/.gitignore
+!/.gitlint
+!/cspell.config.yaml
+!/.markdownlintignore
+!/.stignore
+!/.versionrc
+!/.pre-commit-config.yaml
+!/.github-labels.json
+#  ────────────────────────────────────────────────────────────
+!/LICENSE
+!/README.md
+!/commitlint.config.js
+!/CONTRIBUTING.md
+!/CHANGELOG.md
+#  ────────────────────────────────────────────────────────────
+!/contrib/*
+!/contrib/*/*.py
+!/contrib/*/*.md
