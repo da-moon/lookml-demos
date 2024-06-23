@@ -1,4 +1,4 @@
-import os, click, requests functools, pathlib, shutil, time, csv
+import os, click, requests, functools, pathlib, shutil, time, csv
 from typing import Tuple
 from tqdm.auto import tqdm
 
@@ -17,7 +17,7 @@ def download_parquet(
     download_parquet downloads the trip data and stores it in the specified directory.
 
     :param data_dir: directory to store parquet dataset
-    :param prefix: Taxi type. The value is either "green" or "yellow".
+    :param prefix: Dataset type.
     :param year: Year of the dataset
     :param month: Month of the dataset
     :param dryrun: dryrun. Setting it to true will cause the function to not download any files
@@ -60,6 +60,7 @@ def download_parquet(
     default=os.path.abspath(
         os.path.join(os.path.dirname(__file__), "..", "..", "data")
     ),
+    show_default=True,
     help="Directory to store downloaded data.",
 )
 @click.option(
@@ -67,6 +68,7 @@ def download_parquet(
     "--dataset",
     type=click.Choice(["green", "yellow", "fhvhv", "fhv"], case_sensitive=False),
     default="yellow",
+    show_default=True,
     help="Dataset to download. Some datasets are not available in earlier years",
 )
 @click.option(
@@ -74,6 +76,7 @@ def download_parquet(
     "--start_year",
     type=int,
     default=2009,
+    show_default=True,
     help="Starting year of the dataset",
 )
 @click.option(
@@ -81,6 +84,7 @@ def download_parquet(
     "--start_month",
     type=int,
     default=1,
+    show_default=True,
     help="Starting month of the dataset",
 )
 @click.option(
@@ -88,6 +92,7 @@ def download_parquet(
     "--end_year",
     type=int,
     default=2024,
+    show_default=True,
     help="End year of the dataset",
 )
 @click.option(
@@ -95,6 +100,7 @@ def download_parquet(
     "--end_month",
     type=int,
     default=12,
+    show_default=True,
     help="End month of the dataset",
 )
 @click.option(
