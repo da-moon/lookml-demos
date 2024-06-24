@@ -41,3 +41,7 @@
 !/CONTRIBUTING.md
 !/CHANGELOG.md
 #  ────────────────────────────────────────────────────────────
+!/models
+!/models/*.model
+!/views
+!/views/*.view
